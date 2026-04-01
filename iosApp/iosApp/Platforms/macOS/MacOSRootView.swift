@@ -1,7 +1,14 @@
+//
+//  MacOSRootView.swift
+//  iosApp
+//
+//  Created by 傅逸凡 on 2026/4/1.
+//
+
 import Shared
 import SwiftUI
 
-struct ContentView: View {
+struct MacOSRootView: View {
     @State private var showContent = false
     var body: some View {
         VStack {
@@ -16,7 +23,7 @@ struct ContentView: View {
                     Image(systemName: "swift")
                         .font(.system(size: 200))
                         .foregroundColor(.accentColor)
-                    Text("SwiftUI: \(Greeting().greet())")
+                    Text("SwiftUI on macOS: \(Greeting().greet())")
                 }
                 .transition(.move(edge: .top).combined(with: .opacity))
             }
@@ -26,8 +33,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MacOSRootView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MacOSRootView()
     }
 }
