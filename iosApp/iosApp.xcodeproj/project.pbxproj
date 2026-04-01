@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C4B024CC2F7D26AB0092D57C /* watchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C4B024C22F7D26A90092D57C /* watchApp.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4B024CC2F7D26AB0092D57C /* watchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C4B024C22F7D26A90092D57C /* watchApp.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -274,6 +274,7 @@
 /* Begin PBXTargetDependency section */
 		C4B024CB2F7D26AB0092D57C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = C4B024C12F7D26A90092D57C /* watchApp */;
 			targetProxy = C4B024CA2F7D26AB0092D57C /* PBXContainerItemProxy */;
 		};
@@ -289,7 +290,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
-				DEVELOPMENT_TEAM = LQZCJ74Y63;
+				DEVELOPMENT_TEAM = 3SWM9ZLGH6;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
@@ -458,7 +459,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LQZCJ74Y63;
+				DEVELOPMENT_TEAM = 3SWM9ZLGH6;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -493,7 +494,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = LQZCJ74Y63;
+				DEVELOPMENT_TEAM = 3SWM9ZLGH6;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -529,7 +530,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"iosApp/Preview Content\"";
-				DEVELOPMENT_TEAM = LQZCJ74Y63;
+				DEVELOPMENT_TEAM = 3SWM9ZLGH6;
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_INCOMING_NETWORK_CONNECTIONS = NO;
