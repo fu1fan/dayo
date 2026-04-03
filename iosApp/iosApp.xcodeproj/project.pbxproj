@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C4B024CC2F7D26AB0092D57C /* watchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C4B024C22F7D26A90092D57C /* watchApp.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C4FCB70D2F7EBF320004CE74 /* SwiftUIIntrospect in Frameworks */ = {isa = PBXBuildFile; productRef = C4FCB70C2F7EBF320004CE74 /* SwiftUIIntrospect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,13 @@
 			);
 			target = 1AA30F494EFB136EB15796C2 /* iosApp */;
 		};
+		C4F1BC922F7EAD6A00C745DE /* Exceptions for "iosApp" folder in "watchApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Resources/Localizable.xcstrings,
+			);
+			target = C4B024C12F7D26A90092D57C /* watchApp */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -59,6 +67,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				16D2AF3FF84E5B934D26F10E /* Exceptions for "iosApp" folder in "iosApp" target */,
+				C4F1BC922F7EAD6A00C745DE /* Exceptions for "iosApp" folder in "watchApp" target */,
 			);
 			path = iosApp;
 			sourceTree = "<group>";
@@ -75,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4FCB70D2F7EBF320004CE74 /* SwiftUIIntrospect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +140,7 @@
 			);
 			name = iosApp;
 			packageProductDependencies = (
+				C4FCB70C2F7EBF320004CE74 /* SwiftUIIntrospect */,
 			);
 			productName = iosApp;
 			productReference = 4EC90DBECCB4A8063F9BC593 /* dayo.app */;
@@ -185,6 +196,9 @@
 			);
 			mainGroup = E38B47D863377DF5940E1BAE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C4FCB70B2F7EBF320004CE74 /* XCRemoteSwiftPackageReference "swiftui-introspect" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C17EDC93203234F59A5A797F /* Products */;
 			projectDirPath = "";
@@ -250,7 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \\\"YES\\\"\"\n  exit 0\nfi\ncd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+			shellScript = "if [ \"YES\" = \"$OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED\" ]; then\n  echo \"Skipping Gradle build task invocation due to OVERRIDE_KOTLIN_BUILD_IDE_SUPPORTED environment variable set to \\\"YES\\\"\"\n  exit 0\nfi\ncd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -389,6 +403,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -447,6 +462,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -599,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4FCB70B2F7EBF320004CE74 /* XCRemoteSwiftPackageReference "swiftui-introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/swiftui-introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 26.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4FCB70C2F7EBF320004CE74 /* SwiftUIIntrospect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4FCB70B2F7EBF320004CE74 /* XCRemoteSwiftPackageReference "swiftui-introspect" */;
+			productName = SwiftUIIntrospect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03A1AE8260ED4184DC279821 /* Project object */;
 }
