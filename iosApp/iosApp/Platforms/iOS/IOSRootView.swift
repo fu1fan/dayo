@@ -7,29 +7,46 @@
 
 import Shared
 import SwiftUI
+//import SwiftUIIntrospect
+
+#Preview {
+    IOSRootView()
+}
 
 struct IOSRootView: View {
+    @State private var searchText = ""
+
     var body: some View {
         TabView {
-            NavigationStack {
-                Text("今日")
-            }
-            .tabItem {
-                Label("今日", systemImage: "sun.max")
-            }
-
-            NavigationStack {
-                Text("日程")
-            }
-            .tabItem {
-                Label("日程", systemImage: "calendar")
+            Tab(String(localized: "Today"), systemImage: "sun.max") {
+                NavigationStack {
+                    TodayView()
+                }
             }
 
-            NavigationStack {
-                Text("我的")
+            Tab(String(localized: "Plan"), systemImage: "calendar") {
+                NavigationStack {
+//                    PlanView()
+                }
             }
-            .tabItem {
-                Label("我的", systemImage: "person")
+
+            Tab(String(localized: "Health"), systemImage: "heart") {
+                NavigationStack {
+//                    HealthView()
+                }
+            }
+
+            Tab(String(localized: "Insight"), systemImage: "radicand.squareroot") {
+                NavigationStack {
+//                    InsightView()
+                }
+            }
+
+            Tab(String(localized: "AI"), systemImage: "wand.and.sparkles", role: .search) {
+                NavigationStack {
+                    ChatView()
+                        .searchable(text: $searchText, prompt: String(localized: "Let AI help you anything!"))
+                }
             }
         }
     }

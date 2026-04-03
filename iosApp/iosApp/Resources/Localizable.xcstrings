@@ -1,0 +1,51 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "AI" : {
+
+    },
+    "Click me!" : {
+
+    },
+    "Health" : {
+
+    },
+    "Hello, Chat!" : {
+
+    },
+    "Hello, world!" : {
+
+    },
+    "Insight" : {
+
+    },
+    "Let AI help you anything!" : {
+
+    },
+    "Plan" : {
+
+    },
+    "SwiftUI on macOS: %@" : {
+
+    },
+    "Today" : {
+
+    },
+    "今日建议" : {
+
+    },
+    "打开设置" : {
+
+    },
+    "查看全部" : {
+
+    },
+    "查看详情" : {
+
+    },
+    "问问 AI" : {
+
+    }
+  },
+  "version" : "1.2"
+}
